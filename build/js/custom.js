@@ -410,7 +410,7 @@ if (typeof NProgress != 'undefined') {
 		
 		
 		for (var i = 0; i < 30; i++) {
-		  chart_plot_02_data.push([new Date(Date.today().add(i).days()).getTime(), randNum() + i + i + 10]);
+		  chart_plot_02_data.push([new Date(Date.today().add(i*7).days()).getTime(), randNum() + i + i + 10]);
 		}
 		
 		
@@ -2240,11 +2240,11 @@ if (typeof NProgress != 'undefined') {
 			  var ctx = document.getElementById("canvasDoughnut");
 			  var data = {
 				labels: [
-				  "Dark Grey",
-				  "Purple Color",
-				  "Gray Color",
-				  "Green Color",
-				  "Blue Color"
+				  "Living Room",
+				  "Master Bedroom",
+				  "Bedroom 1",
+				  "Bedroom 2",
+				  "Kitchen"
 				],
 				datasets: [{
 				  data: [120, 50, 140, 180, 100],
